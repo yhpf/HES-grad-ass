@@ -21,7 +21,6 @@ h1 {
 /* All main MEAN boxes */
 .meanboxesm, .meanboxese, .meanboxesa, .meanboxesn {
 	width: 75%;
-	margin-bottom: 1rem;
 }
 
 /* Express.js box */
@@ -31,9 +30,54 @@ h1 {
 	width: 70%;
 }
 
+/* MongoDB button */
+#mongodb-button {
+	background-color: darkgreen;
+	color: white;
+}
+
+#mongodb-button:hover {
+  opacity: 0.8;
+}
+
+/* Express.js bobuttonx */
+#expressjs-button {
+	background-color: grey;
+	color: white;
+}
+
+#expressjs-button:hover {
+  opacity: 0.8;
+}
+
+/* Angular.js button */
+#angularjs-button {
+	background-color: red;
+	color: white;
+}
+
+#angularjs-button:hover {
+  opacity: 0.8;
+}
+
+/* Node.js button */
+#nodejs-button {
+	background-color: green;
+	color: white;
+}
+
+#nodejs-button:hover {
+  opacity: 0.8;
+}
+
 button {
 	font-weight: bold;
 }
+
+.active {
+  opacity: 0.8;
+}
+
 
 /* Collapsible */
 /* Style the button that is used to open and close the collapsible content */
@@ -47,6 +91,7 @@ button {
   text-align: left;
   outline: none;
   font-size: 15px;
+ margin-bottom: 1rem;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
