@@ -20,22 +20,27 @@
 <body>
 	<header>
 		<h1>MEAN stack orientation help</h1>
-		<!-- should i have a topnav? -->
+		<p id="headeringress">
+			Congratulations on starting your MEAN stack journey! We have MongoDB, Express.js, Angular.js and Node.js<br>...so far so good. But how to keep track of what they are and everything else. To start with, the order the names are presented in makes no sense to me. Therefore they will not be presented in MEAN order. I hope this page is going to help you cover some of the basics.
+		</p>
 	</header>
 	<main>
-		<p id="mainingress">
-		Congratulations on starting your MEAN stack journey! There are MongoDB, Express.js, Angular.js and Node.js...so far so good, but how to keep track of what they are and everything else. To start with, the order the names are presented in makes no sence to me. Therefor they will not be presented in MEAN order. I hope this page is going to help you cover some of the basics. (This guide will only cover comments around installation from a Mac users view.)
-		</p>
-
+		<h2>The MEAN stack</h2>
+		<p class="brodtext">The MEAN stack is a JavaScript-based framework for developing web applications. All components of the MEAN stack support programs that are written in JavaScript, therefore MEAN stack applications can be written in one language for both server-side and client-side execution environments.</p>
 		<div class="mainbox-contrainer">
 			<div class="meanboxesn">
 				<!-- NODE.JS -->
 				<button type="button" class="collapsible" id="nodejs-button">Node.js (Server)</button>
 				<div class="content">
-  					<p>Node.js is a JavaScript run-time environment. Node.js allows you to write both server- and client-side JavaScript, and give us the possibility to and share code between client and server side (JavasScript end-to-end). Node.js can handle multiple web requests at the same time, they are all processed in the same thread (using a basic event model). NOde.js is open-source! One of Node.js strength is that it is fast to implement, both when it comes to installations and development.</p>
-  					<p>Comment: Make sure to install and run a stable version (usually even version numbers) of Node.js when you develope. Node Package Manager (npm) is the Node.js default package manager. It lets you install custom written modules/packages from other developers (3rd party packages). See below for Usefull packages to use.</p>
-  					<p>Connect is a HTTP server framework that allows you to use middleware (so basically a middleware framework). Learn more about Connect below under Usefull packages.</p>
-  					<p><a href="https://nodejs.org/en/docs/" target="_blank">Node.js documentation</a></p>
+  					<p><strong>Node</strong> is a JavaScript run-time environment. It allows us to write both server- and client-side JavaScript, and gives us the possibility to share code between client and server side (JavasScript end-to-end). Node can handle multiple web requests at the same time, they are all processed in the same thread (using a basic event model). One of Node&apos;s strengths is that it is fast to implement, both when it comes to installations and development.</p>
+
+					<p>Make sure to install and run a stable version of Node when you develop. Usually even version numbers are stable.</p>
+
+					<p>Node is open-source! It gives you the opportunity to install custom written modules/packages from other developers (3rd party packages). You&apos;ll use the Node Package Manager (npm) to install the packages. Please see below for Useful packages to use.</p>
+
+					<p><strong>Connect</strong> is a HTTP server framework that allows you to use middleware. Learn more about Connect below under Useful packages.</p>
+
+  					<p>Learn more in the <a href="https://nodejs.org/en/docs/" target="_blank">Node.js documentation</a></p>
 				</div>
 			</div>
 
@@ -43,9 +48,9 @@
 				<!-- EXPRESS.JS -->
 				<button type="button" class="collapsible" id="expressjs-button">Express.js (Server)</button>
 				<div class="content">
-  					<p>What it is: Node.js web application framework (higher level framework that more or less extends and built upon Connect). Express acts as a light layer on top of Node.js, making it easier to develop Node.js web applications. Provieds an easy-to-use API to interact with the webserver.</p>
-  					<p>Comment: Middlewares are used to modify request objects and response objects. They can either end an HTTP request or pass it along to another middleware, like a chain, with help from the next object. One of the most important custom packages to install with npm is Express.</p>
-  					<p><a href="https://expressjs.com/" target="_blank">Home of Express.js</a></p>
+  					<p>One of the most important custom packages to install with npm is <strong>Express</strong>. It is a web application framework (higher level framework that more or less extends and built upon Connect). Express acts as a light layer on top of Node, making it easier to develop Node web applications. It provides an easy-to-use API to interact with the webserver.</p>
+					<p>Express also uses middleware. Middleware are used to modify request objects and response objects. They can either end an HTTP request or pass it along to another middleware, like a chain, with help from the next object.</p>
+  					<p>Learn more at the <a href="https://expressjs.com/" target="_blank">home of Express.js</a></p>
 				</div>
 			</div>
 
@@ -53,36 +58,35 @@
 				<!-- Mongo DB -->
 				<button type="button" class="collapsible" id="mongodb-button">MongoDB (Database)</button>
 				<div class="content">
-  					<p>What it is: MongoDB is a document-oriented database (NoSQL). Unlike a relational database (SQL), it store all information for a given object in a single instance in the database, and every stored object can be different from every other. This is suitable for a Node.js application and makes it a fast alternative for a database</p>
-  					<p>Comment:</p>
-  					<p><a href="https://www.mongodb.com/docs/" target="_blank">MongoDB documentation</a></p>
+  					<p><strong>MongoDB</strong> is a document-oriented database (NoSQL). Unlike a relational database (SQL), it stores all information for a given object in a single instance in the database, and every stored object can be different from every other. This is suitable for a Node application and makes it a fast alternative for a database</p>
+  					<p>Learn more in the <a href="https://www.mongodb.com/docs/" target="_blank">MongoDB documentation</a></p>
   					<!-- MONGO DB ATLAS -->
   					<button type="button" class="collapsible">MongoDB Atlas</button>
   					<div class="content">
-  						<p>What it is: Atlas is a cloud database service. In other words, this is where you can host your database and your data is stored here.</p>
-  						<p>Comment: Separate service. You have to creat an account via their webpage.</p>
-  						<p><a href="https://www.mongodb.com/docs/atlas/" target="_blank">MongoDB Atlas documentation</a></p>
+  						<p><strong>MongoDB Atlas</strong> is a cloud database service. In other words, this is where you can host your database and your data is stored here.</p>
+						<p>This is a separate service and you&apos;ll have to create an account via their webpage to use it.</p>
+  						<p>Learn more in the <a href="https://www.mongodb.com/docs/atlas/" target="_blank">MongoDB Atlas documentation</a></p>
   					</div>
   					<!-- MONGO DB COMPASS -->
   					<button type="button" class="collapsible">MongoDB Compass</button>
   					<div class="content">
-  						<p>What it is: Compass is the GUI (graphical user interface) for MongoDB. In other words, it is an interactive tool for querying, optimizing, and analyzing your MongoDB data.</p> 
-  						<p>Comment: Separate application on your computer that you have to download and install. You connect Compass with your MongoDB Atlas. Very visual and easy to use when working with your database.</p>
-  						<p><a href="https://www.mongodb.com/docs/compass/" target="_blank">MongoDB Compass documentation</a></p>
+  						<p><strong>MongoDB Compass</strong> is the GUI (graphical user interface) for MongoDB. In other words, it is an interactive tool for querying, optimizing, and analyzing your data.</p>
+						<p>This is a separate application that you&apos;ll have to download and install to be able to run on your computer. You connect MongoDB Compass with your MongoDB Atlas. It is very visual and easy to use when working with your database.</p>
+  						<p>Learn more in the <a href="https://www.mongodb.com/docs/compass/" target="_blank">MongoDB Compass documentation</a></p>
   					</div>
   					<!-- MONGOSH -->
   					<button type="button" class="collapsible">Mongosh</button>
   					<div class="content">
-  						<p>What it is: Mongosh is the MongoDB shell. It is an environment for interacting with MongoDB deployment. Privious MongoDB shell was called mongo.</p>
-  						<p>Comment: This is a command-line tool that can be installed from MongoDB Atlas webpage (requires that you have Homebrew installed on your Mac). You connect your shell with your MongoDB Atlas.</p>
-  						<p><a href="https://www.mongodb.com/docs/mongodb-shell/" target="_blank">Mongosh documentation</a></p>
+  						<p><strong>Mongosh</strong> is the MongoDB shell. It is an environment for interacting with the MongoDB deployment. The previous MongoDB shell was called only ‘mongo’.</p>
+						<p>This is a command-line tool that can be installed from the MongoDB Atlas webpage (requires that you have Homebrew installed on your Mac). You connect your shell with your MongoDB Atlas.</p>
+  						<p>Learn more in the <a href="https://www.mongodb.com/docs/mongodb-shell/" target="_blank">Mongosh documentation</a></p>
   					</div>
   					<!-- MONGOOSE -->
   					<button type="button" class="collapsible">Mongoose</button>
   					<div class="content">
-  						<p>What it is: Mongoose is built on top of the MongoDB driver and it is a object modeling tool. In other words, it provide you a way to model your data.</p>
-  						<p>Comment: You have to use 'npm install' to be able to use it on your computer. You also have to require it in JS document, initialize it with help of 'mongoose.connect([connection string from MongoDB Atlas])', and creat a schema. </p>
-  						<p><a href="https://mongoosejs.com/docs/guide.html" target="_blank">Mongoose documentation</a></p>
+  						<p><strong>Mongoose</strong> is built on top of the MongoDB driver and it is an object modeling tool. In other words, it provides you a way to model your data.</p>
+						<p>You have to use 'npm install' to be able to use Mongoose on your computer.</p>
+  						<p>Learn more in the <a href="https://mongoosejs.com/docs/guide.html" target="_blank">Mongoose documentation</a></p>
   					</div>
 				</div>
 			</div>
@@ -91,39 +95,39 @@
 				<!-- ANGULAR.JS -->
 				<button type="button" class="collapsible" id="angularjs-button">Angular.js (Web/Browser)</button>
 				<div class="content">
-  					<p>What it is: a client-side JavaScript framework. Angular was developed to make it easy to well-designed and structures webpages and applications. Angular extends HTML attributes with help from ng-directives, and binds data to HTML elements using {{expressions}} .</p>
-  					<p>Comment: You can add Angular via a script tag. You write in JavaScript in the framework. 'ng' is a core module of Angular. Angular uses TypeScript (which is a superset of JavaScript) and the code is transpiled into JavaScript. To work with Angular directly from your command-line you can use <a href="https://angular.io/cli" target="_blank">Angular CLI</a>.</p>
-  					<p><a href="https://angular.io/docs" target="_blank">Angular.js documentation</a></p>
+  					<p><strong>Angular</strong> is a client-side JavaScript framework. It was developed to make it easy to well-designed and structures webpages and applications. Angular extends HTML attributes with help from ng-directives, and binds data to HTML elements using expressions {{ }}. Nice-to-know is that 'ng' is a core module of Angular.</p>
+  					<p>Angular uses TypeScript (which is a superset of JavaScript) and the code is transpiled into JavaScript. To work with Angular directly from your command-line you can use<a href="https://angular.io/cli" target="_blank">Angular CLI</a>.</p>
+  					<p>Learn more in the <a href="https://angular.io/docs" target="_blank">Angular.js documentation</a></p>
 				</div>
 			</div>
 
 		</div>
-		<h2>You probably what to keep track of this as well...</h2>
+		<h2>You probably want to keep track of this as well...</h2>
 		<div class="secondarybox-contrainer">
 			<div class="packagesbox">
 				<!-- Packages-->
-				<button type="button" class="collapsible" id="packages-button">Usefull Node.js packages (installl with npm)</button>
+				<button type="button" class="collapsible" id="packages-button">Useful Node.js packages (installl with npm)</button>
 				<div class="content">
   					<p><strong><a href="https://nodemon.io/" target="_blank">Nodemon</a></strong></p>
-  					<p>What: What, wrapper for Node.js. Allows you to keep your process up and running and automatically reloads it (restarts the server) for you when you save changes. This is perfect when you are developing and do not want to manually restart the server all the time. (If you use a start script, you can use 'npm run start dev' to run your code with nodemon, otherview you just replace node with nodemon in command line.)</p>
+  					<p>Nodemon is a wrapper for Node. It allows you to keep your process up and running and automatically reloads it (restarts the server) for you when you save changes. This is perfect when you are developing and do not want to manually restart the server all the time. (When you have it installed and want to use it  you just replace node with nodemon in the command line.)</p>
   					<p><strong><a href="https://www.npmjs.com/package/connect" target="_blank">Connect</a></strong></p>
-  					<p>Connect is a HTTP server framework that allows you to use middleware (so basically a middleware framework). Connect takes the build-in HTTP server functionality and extends it by adding a plugin framework. The plugins acts as middleware. Middleware are really functions and they live between different layers in your application, and works like a hidden connection.</p>
+  					<p>Connect is a HTTP server framework that allows you to use middleware (so basically a middleware framework). Connect takes the built-in HTTP server functionality and extends it by adding a plugin framework. The plugins act as middleware. Middleware are really functions and they live between different layers in your application, and work like a hidden connection.</p>
   						<p class="middleware">Middleware and libraries for Connect and Express (link to more info)</p>
   						<ul>
-  							<li>bodyparser: Parse incomming request bodies in a middleware before the handlers. Can only handle singlepart (headers and body) body, not multipart bodies.</li>
-  							<li>connect-flash: Used to store flash messages. Makes message available to the next page that is to be rendered.</li>
-  							<li>cookieparser: Parse the cookie header to store data in browser when a session is eastablished on the server-side.</li>
-  							<li>errorhandler: Helps handling errors in a development environment.</li>
-  							<li>express-session: Used to identify users so that every user visiting the application will be assigned a unique session, so that a unique user state can be stored.</li>
-  							<li>morgan: Simplifies the process of logging HTTP requests and errors to the application. </li>
-  							<li>multer: Handles multipart bodies and form-data. I primarly used for uploading files.</li>
-  							<li>passport: Provides you with a simple way to help you handle authentication. It authenticates requests.</li>
-  							<li>serve-index: Serves pages that contain directory listings for a given path.</li>
-  							<li>serve-static: Serves files from within given root directory. If a file is not found this module will move on to the next middleware instead of sending a 404 response.</li>
+  							<li><a href="https://www.npmjs.com/package/body-parser" target="_blank">body-parser</a>: Parse incomming request bodies in a middleware before the handlers. Can only handle singlepart (headers and body) body, not multipart bodies.</li>
+  							<li><a href="https://www.npmjs.com/package/connect-flash" target="_blank">connect-flash</a>: Used to store flash messages. Makes message available to the next page that is to be rendered.</li>
+  							<li><a href="https://www.npmjs.com/package/cookieparser" target="_blank">cookieparser</a>: Parse the cookie header to store data in browser when a session is eastablished on the server-side.</li>
+  							<li><a href="https://www.npmjs.com/package/errorhandler" target="_blank">errorhandler</a>: Helps handling errors in a development environment.</li>
+  							<li><a href="https://www.npmjs.com/package/express-session" target="_blank">express-session</a>: Used to identify users so that every user visiting the application will be assigned a unique session, so that a unique user state can be stored.</li>
+  							<li><a href="https://www.npmjs.com/package/morgan" target="_blank">morgan</a>: Simplifies the process of logging HTTP requests and errors to the application. </li>
+  							<li><a href="https://www.npmjs.com/package/multer" target="_blank">multer</a>: Handles multipart bodies and form-data. I primarly used for uploading files.</li>
+  							<li><a href="https://www.npmjs.com/package/passport" target="_blank">passport</a>: Provides you with a simple way to help you handle authentication. It authenticates requests.</li>
+  							<li><a href="https://www.npmjs.com/package/serve-index" target="_blank">serve-index</a>: Serves pages that contain directory listings for a given path.</li>
+  							<li><a href="https://www.npmjs.com/package/serve-static" target="_blank">serve-static</a>: Serves files from within given root directory. If a file is not found this module will move on to the next middleware instead of sending a 404 response.</li>
   						</ul>
-  					<p><strong><a href="https://www.npmjs.com/package/dotenv" target="_blank">dotenv</a></strong></p>
+  					<p><strong><a href="https://www.npmjs.com/package/dotenv" target="_blank">Dotenv</a></strong></p>
   					<p>Loads environment variables frmom a .env file. You can use this to store keys and values that you do not want to show in code. For example private keys when connecting to you Mongo database.</p>
-  					<p><strong><a href="https://momentjs.com/" target="_blank">moment.js</a></strong></p>
+  					<p><strong><a href="https://momentjs.com/" target="_blank">Moment.js</a></strong></p>
   					<p>JavaScript date library for parsing, validating, manipulating, and transforming dates. If you for example want to show date in other order or without time stamp.</p>
 				</div>
 			</div>
@@ -132,38 +136,34 @@
 				<!-- REST API-->
 				<button type="button" class="collapsible" id="restapi-button">REST API</button>
 				<div class="content">
-  					<p>REST (Representational State Transfer) API (Application Programming Interface) One way to put it is that an API let you access data from an external source. You can for example access stored weather data via NASAs API. And then you can use that as input for your weather app. REST in itself is a software architectual style. Many APIs of today are of RESt type.</p>
-  					<p>Postman is a API platform for building and using APIs. It comes as an application and you can use it to test your Express REST API</p>
+  					<p><strong>REST API</strong> = Representational State Transfer Application Programming Interface. One way to put it is that an API lets you access data from an external source. You can for example access stored weather data via NASAs API. And then you can use that as input for your weather app. REST in itself is a software architectural style. Many APIs of today are of REST type.</p>
+  					<p><strong><a href="https://www.postman.com/" target="_blank">Postman</a></strong> is an API platform for building and using APIs. It comes as an application and you can use it to test your Express REST API</p>
 				</div>
 			</div>
 
 			<div class="templateenginebox">
 				<!-- templateengine-->
-				<button type="button" class="collapsible" id="templateengine-button">Template Engines for Node.js (Express.js)</button>
+				<button type="button" class="collapsible" id="templateengine-button">Template Engines for Node.js</button>
 				<div class="content">
-					<p>Template engines</p>
+					<p>A <strong>template/view engine</strong> enables you to use static template files in your application. At runtime it transforms the template into an HTML file that is sent to the client/browser. The purpose is to make it easier to design an HTML page.</p>
   					<p>Examples: <a href="https://pugjs.org/api/getting-started.html" target="_blank">Pug/Jade</a>, <a href="https://ejs.co/" target="_blank">EJS</a>, <a href="https://handlebarsjs.com/" target="_blank">Handlebars</a>, <a href="https://mustache.github.io/" target="_blank">Mustache</a></p>
-  					<p>A template / view engine enables you to use static template files in your application. At runtime it transforms the template into an HTML file that is sent to the client/browser. The purpose is to make it easier to design an HTML page.</p>
 				</div>
 			</div>
 
 			<div class="dobox">
-				<!-- Digital Ocean -->
-				<button type="button" class="collapsible" id="do-button">Digital Ocean</button>
+				<!-- DigitalOcean -->
+				<button type="button" class="collapsible" id="do-button">DigitalOcean</button>
 				<div class="content">
-  					<p>Digital Ocean</p>
-  					<p>Access you database either online or in application. Other cloud services: AWS, MS Azure, Google Cloud, IBM Cloud</p>
-  					<p><a href="https://www.digitalocean.com/" target="_blank">Home of Digital Ocean</a></p>
+  					<p><strong><a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a></strong> is a cloud hosting provider. You sign up for their services at their webpage.</p>
+  					<p>Example of other cloud services: AWS, MS Azure, Google Cloud, IBM Cloud</p>
 				</div>
 			</div>
 
 			<div class="githubbox">
 				<!-- GitHub / Git -->
-				<button type="button" class="collapsible" id="github-button">GitHub</button>
+				<button type="button" class="collapsible" id="github-button">GitHub and Git</button>
 				<div class="content">
-  					<p>GitHub and Git</p>
-  					<p>Internethosting for software development. Uses version controll via Git.</p>
-  					<p><a href="https://github.com/" target="_blank">Home of GitHub</a></p>
+  					<p><strong><a href="https://github.com/" target="_blank">GitHub</a></strong> is a internethosting service for software development. It uses version controll via <strong><a href="https://git-scm.com/" target="_blank">Git</a></strong>.</p>
 				</div>
 			</div>
 
@@ -171,23 +171,25 @@
 				<!-- OTHER-->
 				<button type="button" class="collapsible" id="restother-button">Other</button>
 				<div class="content">
-  					<p>There is also a MERN stack. Where React is used instead of Angular.</p>
-  					<p><strong><a href="https://www.json.org/json-en.html" target="_blank">JSON (JavaScript Object Notation)</a></strong>: Open standard file format och data interchange format. Userd to read data from webserver and display it in web page.</p>
+					<ul>
+	  					<li><p>There is also a MERN stack. Where React is used instead of Angular.</p>
+	  					<p><strong><a href="https://www.json.org/json-en.html" target="_blank">JSON (JavaScript Object Notation)</a></strong>: Open standard file format och data interchange format. Userd to read data from webserver and display it in web page.</p></li>
 
-  					<p><strong>AJAX (Asynchronous JavaScript and XML)</strong>: Helps creat content asynchronous web applications (webpages can be updated asynchronously by exchanging data with webserver behind the scene).</p>
+	  					<li><p><strong>AJAX (Asynchronous JavaScript and XML)</strong>: Helps creat content asynchronous web applications (webpages can be updated asynchronously by exchanging data with webserver behind the scene).</p></li>
 
-  					<p><strong><a href="https://www.php.net/" target="_blank">PHP</strong></a>: Scripting language. Mainly used for server-side web development.</p>
+	  					<li><p><strong><a href="https://jquery.com/" target="_blank">jQuery</a></strong>: JavaScript library. Developed to make it much easier to use JavaScript on your website.</p></li>
 
-  					<p><strong><a href="https://jquery.com/" target="_blank">jQuery</a></strong>: JavaScript library. Developed to make it much easier to use JavaScript on your website.</p>
+	  					<li><p><strong><a href="https://www.php.net/" target="_blank">PHP</strong></a>: Scripting language. Mainly used for server-side web development.</p></li>
 
-  					<p><a href="https://www.geeksforgeeks.org/difference-between-nodejs-ajax-and-jquery/#:~:text=NodeJs%20is%20an%20open%2Dsource,javascript%20outside%20of%20the%20browser." target="_blank">Interesting article comparing Node, AJAX and jQuery</a></p>
+	  					<li><p><a href="https://www.geeksforgeeks.org/difference-between-nodejs-ajax-and-jquery/#:~:text=NodeJs%20is%20an%20open%2Dsource,javascript%20outside%20of%20the%20browser." target="_blank">Interesting article comparing Node, AJAX and jQuery</a></p></li>
+  					</ul>
 				</div>
 			</div>
 
 		</div>
 	</main>
 	<footer>
-		<p>Thanks for using this guide :) If you have suggestions for what to add, please hit me up!</p>
+		<p class="footertext">Thanks for using this guide :) If you have suggestions for what to add, please hit me up!</p>
 	</footer>
 
 	<!--- JS run js --->
